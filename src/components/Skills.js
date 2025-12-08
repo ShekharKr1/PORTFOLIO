@@ -35,12 +35,16 @@ function Skills() {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p className="justify-content">
-                Driven by a desire to gain technical and industrial knowledge, I
-                am always open to learning and contributing to the community
-                through innovation and hard work. My proficiency lies in the
-                Frontend Technology, and I possess a deep understanding of Data
-                Structures and Algorithms. I have developed several projects
-                using the Frontend Technology.
+                Driven by a strong desire to gain deeper technical and
+                industrial knowledge, I continuously strive to learn, build, and
+                innovate. As a Full-Stack Developer, I specialize in creating
+                seamless and efficient web applications using modern frontend
+                and backend technologies. I have hands-on experience in building
+                multiple real-world projects, backed by a solid understanding of
+                Data Structures and Algorithms. With a focus on clean
+                architecture, problem-solving, and continuous improvement, I aim
+                to contribute to meaningful products and growing teams through
+                dedication and hard work.
               </p>
               <Carousel
                 responsive={responsive}
@@ -138,7 +142,28 @@ function Skills() {
                   </ChangingProgressProvider>
                   <h5>ReactJs</h5>
                 </div>
-
+                         {/* NextJs */}
+                <div className="item">
+                  <ChangingProgressProvider values={[0, 80]}>
+                    {(percentage) => (
+                      <CircularProgressbar
+                        value={percentage}
+                        text={`${percentage}%`}
+                        background
+                        backgroundPadding={20}
+                        styles={buildStyles({
+                          backgroundColor: "#151515",
+                          textColor: "#fff",
+                          textSize: "0.8rem",
+                          pathColor: "#863494",
+                          trailColor: "transparent",
+                          pathTransitionDuration: 1,
+                        })}
+                      />
+                    )}
+                  </ChangingProgressProvider>
+                  <h5>NextJs</h5>
+                </div>
                 {/* Nodejs */}
                 <div className="item">
                   <ChangingProgressProvider values={[0, 70]}>
